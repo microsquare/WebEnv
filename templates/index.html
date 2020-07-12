@@ -1,0 +1,628 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-171263565-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-171263565-1');
+</script>
+
+    <title>Web Env</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	  <link rel="icon" href="{% static "images/mainfav.ico"%}" type="image/x-icon" />
+    
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="{% static "css/animate.css"%}">
+    
+    <link rel="stylesheet" href="{% static "css/owl.carousel.min.css"%}">
+    <link rel="stylesheet" href="{% static "css/owl.theme.default.min.css"%}">
+    <link rel="stylesheet" href="{% static "css/magnific-popup.css"%}">
+    
+    <link rel="stylesheet" href="{% static "css/flaticon.css"%}">
+    <link rel="stylesheet" href="{% static "css/style.css"%}">
+	  <meta name="keywords" content=" microsquare, micro square, micro-square, meet chaudhari, mehul gosavi, mehul, meet, micro, square, developer, india, website, design, vadodara, webenv, gujarat, web, development, social media, build, hosting, developing, company, Transparency, https, SSL, Certificate, python, django, html, html5, css, css3, js, javascript, Security, Weekly, Analytics, Resposive, Design, Animations, Animation, dynamic, UX/UI, Design">
+	  <meta name="author"  content="https://www.webenv.in">
+	  <meta name="description" content="We at WebEnv provide Best/Beast Quality websites in affordable prices and way more features than you have ever heard, starting at just ₹6000/-">
+
+  </head>
+  <body>
+    
+	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static "images/logo.png"%}"></a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	          <li class="nav-item active"><a href="{% url 'home' %}" class="nav-link">Home</a></li>
+	          <li class="nav-item"><a href="{% url 'about' %}" class="nav-link">About Us</a></li>
+	          <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+
+
+	          <li class="nav-item"><a href="{%url 'feature'%}" class="nav-link">Features</a></li>
+
+	          <li class="nav-item"><a href="{% url 'pricing' %}" class="nav-link">Pricing</a></li>
+
+	          <li class="nav-item"><a href="{% url 'contact' %}" class="nav-link">Contact</a></li>
+	          <li class="nav-item cta"><a href="{%url 'contact'%}" class="nav-link"><span>Talk With Us!!</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav -->
+
+    <div class="hero-wrap js-fullheight">
+      <div class="overlay"></div>
+      <div class="container-fluid px-0">
+      	<div class="row d-md-flex no-gutters slider-text align-items-center js-fullheight justify-content-start">
+	      	<img class="one-third js-fullheight align-self-end order-md-first img-fluid" src="{% static "images/undraw_co-working_825n.svg"%}" alt="">
+	        <div class="one-forth d-flex align-items-center ftco-animate js-fullheight">
+	        	<div class="text mt-5">
+	        		<span class="subheading">WebEnv</span>
+	            <h1 class="mb-3"><span>Website,</span> <span>Development,</span> <span>Company</span></h1>
+	            <p>We at WebEnv provide Best/Beast Quality websites in affordable prices and way more features than you have ever heard, starting at just ₹6000/-</p>
+	            <p><a href="{% url 'contact' %}" class="btn btn-secondary px-4 py-3">Get in touch</a></p>
+	          </div>
+	        </div>
+	    	</div>
+      </div>
+    </div>
+
+    <section class="ftco-section ftco-partner">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-sm ftco-animate">
+    				<a href="https://www.python.org/" class="partner"><img src="{% static "images/partner-1.png"%}" class="img-fluid" alt="Python" alt=""></a>
+    			</div>
+    			<div class="col-sm ftco-animate">
+    				<a href="https://html5.org/" class="partner"><img src="{% static "images/partner-2.png"%}" class="img-fluid" alt="Python"></a>
+    			</div>
+    			<div class="col-sm ftco-animate">
+    				<a href="https://www.w3.org/Style/CSS/Overview.en.html" class="partner"><img src="{% static "images/partner-3.png"%}" class="img-fluid" alt=""></a>
+    			</div>
+    			<div class="col-sm ftco-animate">
+    				<a href="https://www.javascript.com/" class="partner"><img src="{% static "images/partner-4.png"%}" class="img-fluid" alt="Colorlib Template"></a>
+    			</div>
+    			<div class="col-sm ftco-animate">
+    				<a href="https://www.djangoproject.com/" class="partner"><img src="{% static "images/partner-5.png"%}" class="img-fluid" alt="Colorlib Template"></a>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+    
+    <!-- <section class="ftco-domain">
+    	<div class="container">
+    		<div class="row d-flex align-items-center">
+    			<div class="col-lg-5 heading-white mb-4 mb-sm-4 mb-lg-0 ftco-animate">
+    				<h2>Search Your Domain Name</h2>
+    				<p>A small river named Duden flows by their place</p>
+    			</div>
+    			<div class="col-lg-7 p-5 ftco-wrap ftco-animate">
+    				<form action="#" class="domain-form d-flex mb-3">
+              <div class="form-group domain-name">
+                <input type="text" class="form-control name px-4" placeholder="Enter your domain name...">
+              </div>
+              <div class="form-group domain-select d-flex">
+	              <div class="select-wrap">
+                  <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                  <select name="" id="" class="form-control">
+                  	<option value="">.com</option>
+                    <option value="">.net</option>
+                    <option value="">.biz</option>
+                    <option value="">.co</option>
+                    <option value="">.me</option>
+                  </select>
+                </div>
+                <input type="submit" class="search-domain btn btn-primary text-center" value="Search">
+	            </div>
+            </form>
+            <p class="domain-price mt-2">
+            	<span><small>.com</small> ₹9.75</span> 
+            	<span><small>.net</small> ₹9.50</span> 
+            	<span><small>.biz</small> ₹8.95</span> 
+            	<span><small>.co</small> ₹7.80</span>
+            	<span><small>.me</small> ₹7.95</span>
+            </p>
+    			</div>
+    		</div>
+    	</div>
+    </section> -->
+  
+    <section class="ftco-section services-section bg-light" id="services">
+      <div class="container">
+      	<div class="row justify-content-center mb-5">
+          <div class="col-md-8 text-center heading-section ftco-animate">
+            <h2 class="mb-3">WebEnv Services</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-flex">
+            	<div class="icon d-flex align-items-center justify-content-center">
+            		<span class="flaticon-cloud"></span>
+            	</div>
+              <div class="media-body pl-4">
+                <h3 class="heading">Web Developing</h3>
+                <p class="mb-0">We Design Astonishing websites that you will LOVE and that to in affordable prices.</p>
+              </div>
+            </div>      
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-flex">
+            	<div class="icon d-flex align-items-center justify-content-center">
+            		<span class="flaticon-server"></span>
+            	</div>
+              <div class="media-body pl-4">
+                <h3 class="heading">Website Hosting</h3>
+                <p class="mb-0">We even have the option for custom hosting and we also provide free domain service(.tech, .online, .co.in, .xyz ) for one year.</p>
+              </div>
+            </div>    
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-flex">
+            	<div class="icon d-flex align-items-center justify-content-center">
+            		<span class="flaticon-customer-service"></span>
+            	</div>
+              <div class="media-body pl-4">
+                <h3 class="heading">Transparency </h3>
+                <p>We ensure you that there will be full transparency between client and the company provides the client , every information which they ask for.</p>
+              </div>
+            </div>      
+          </div>
+					<div class="col-lg-4 col-md-6 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-flex">
+            	<div class="icon d-flex align-items-center justify-content-center">
+            		<span class="flaticon-life-insurance"></span>
+            	</div>
+              <div class="media-body pl-4">
+                <h3 class="heading">Security</h3>
+                <p>We provide basic level security at the starter plan even provide free 'https' or SSL Certificate for your website.</p>
+              </div>
+            </div>      
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-flex">
+            	<div class="icon d-flex align-items-center justify-content-center">
+            		<span class="flaticon-cloud-computing"></span>
+            	</div>
+              <div class="media-body pl-4">
+                <h3 class="heading">Weekly Analytics</h3>
+                <p>We provide a weekly data of the new visitors, total visitors, from which country, and many more if they choose our monthly service plan(which is also cheap😉).</p>
+              </div>
+            </div>    
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-flex">
+            	<div class="icon d-flex align-items-center justify-content-center">
+            		<span class="flaticon-settings"></span>
+            	</div>
+              <div class="media-body pl-4">
+                <h3 class="heading">Monthly Changes</h3>
+                <p>We provide 10 changes per month for free to the client who took monthly service plan(which is affordable like ₹400/month)</p>
+              </div>
+            </div>      
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="ftco-section">
+    	<div class="container">
+    		<div class="row justify-content-center mb-5">
+          <div class="col-md-8 text-center heading-section ftco-animate">
+            <h2 class="mb-3">What your website will have?</h2>
+          </div>
+        </div>
+    		<div class="row">
+    			<div class="col-lg-6 py-5 d-flex align-items-center">
+    				<img src="{% static "images/undraw_referral_4ki4.svg"%}" class="img-fluid" alt="">
+    			</div>
+    			<div class="col-lg-6 py-5">
+    				<div class="row">
+    					<div class="col-md-12 ftco-animate d-flex">
+    						<div class="media block-6 services border d-flex p-3 mb-3">
+		            	<div class="icon icon-2 d-flex align-items-center justify-content-center">
+		            		<span class="flaticon-cloud-computing"></span>
+		            	</div>
+		              <div class="media-body pl-4">
+		                <h3 class="heading">Resposive Design</h3>
+		                <p class="mb-0">Resposive Design means the website will adapt itself according to device , thus it will look awesome everywhere.</p>
+		              </div>
+		            </div>
+    					</div>
+    					<div class="col-md-12 ftco-animate d-flex">
+    						<div class="media block-6 services border d-flex p-3 mb-3">
+		            	<div class="icon icon-2 d-flex align-items-center justify-content-center">
+		            		<span class="flaticon-cloud"></span>
+		            	</div>
+		              <div class="media-body pl-4">
+		                <h3 class="heading">Animations</h3>
+		                <p class="mb-0">Yes , your website will also have animations like really awesome animations ,You will LOVE it.</p>
+		              </div>
+		            </div>
+    					</div>
+    					<div class="col-md-12 ftco-animate d-flex">
+    						<div class="media block-6 services border d-flex p-3 mb-3">
+		            	<div class="icon icon-2 d-flex align-items-center justify-content-center">
+		            		<span class="flaticon-server"></span>
+		            	</div>
+		              <div class="media-body pl-4">
+		                <h3 class="heading">Dynamic</h3>
+		                <p class="mb-0">Dynamic?? It is the term used to website which can live update itself , And Stunning overlays , slide-show etc on your website.</p>
+		              </div>
+		            </div>
+    					</div>
+    					<div class="col-md-12 ftco-animate d-flex">
+    						<div class="media block-6 services border d-flex p-3 mb-3">
+		            	<div class="icon icon-2 d-flex align-items-center justify-content-center">
+		            		<span class="flaticon-database"></span>
+		            	</div>
+		              <div class="media-body pl-4">
+		                <h3 class="heading">UX/UI Design</h3>
+						  <a class="mb-0">Our user interface is designed by professional aka <a href="https://www.mehulgosavi.tech">Mehul Gosavi</a>  and Graphics are mastered by professional like <a href="https://www.meetchaudhari.tech">Meet Chaudhari</a></p>
+		              </div>
+		            </div>
+    					</div>
+    					<div class="col-md-12 ftco-animate d-flex">
+    						<div class="media block-6 services border d-flex p-3 mb-3">
+		            	<div class="icon icon-2 d-flex align-items-center justify-content-center">
+		            		<span class="flaticon-database"></span>
+		            	</div>
+		              <div class="media-body pl-4">
+		                <h3 class="heading">800+ Designs to choose from</h3>
+		                <p class="mb-0">You heard it Right We have over 800 website designs who are waiting to get chosen from you</p>
+		              </div>
+		            </div>
+    					</div>
+    				</div>
+          </div>
+    		</div>
+    	</div>
+    </section>
+
+    <section class="ftco-section ftco-counter img" id="section-counter">
+    	<div class="container pb-md-5">
+    		<div class="row justify-content-center mb-5">
+          <div class="col-md-8 text-center heading-section heading-section-white ftco-animate">
+          	<h2 class="mb-3">We Always Try To Understand Users Expectation</h2>
+          </div>
+        </div>
+    		<div class="row justify-content-center">
+    			<div class="col-md-10">
+		    		<div class="row">
+		          <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
+		            <div class="block-18 text-center">
+		              <div class="text">
+		                <strong class="number" data-number="4">0</strong>
+		                <span>Websites Completed</span>
+		              </div>
+		            </div>
+		          </div>
+		          <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
+		            <div class="block-18 text-center">
+		              <div class="text">
+		                <strong class="number" data-number="2">0</strong>
+		                <span>Ongoing Projects</span>
+		              </div>
+		            </div>
+		          </div>
+		          <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
+		            <div class="block-18 text-center">
+		              <div class="text">
+		                <strong class="number" data-number="876">0</strong>
+		                <span>Time spent(hours)</span>
+		              </div>
+		            </div>
+				  </div>
+				    <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
+		            <div class="block-18 text-center">
+		              <div class="text">
+		                <strong class="number" data-number="36764">0</strong>
+		                <span>Lines Of code</span>
+		              </div>
+		            </div>
+		          </div>
+		        </div>
+	        </div>
+        </div>
+    	</div>
+    </section>
+
+    <section class="ftco-section ftco-no-pt ftco-no-pb bg-light">
+    	<div class="container">
+    		<div class="row justify-content-center">
+    			<div class="col-lg-10">
+    				<div class="intro">
+    					<div class="row">
+    						<div class="col-md-8">
+    							<h3>Have any question about us?</h3>
+    							<p>A Initiative By Micro-Square.inc , Developed by two young minds , aiming to revolutionize digital space. Creativity , Security , Productivity on peak.</p>
+    						</div>
+    						<div class="col-md-4 d-flex align-items-center justify-content-center">
+    							<a href="{%url 'contact'%}" class="btn btn-tertiary px-4 py-3">Get in Touch</a>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+    <section class="ftco-section ftco-no-pb bg-light ftco-faqs">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-lg-6">
+	    				<div class="img img-faqs mb-4 mb-sm-0" style="background-image:url({% static "images/about-2.jpg"%});">
+	    				</div>
+    			</div>
+    			<div class="col-lg-6 pl-lg-5">
+    				<div class="heading-section mb-5 mt-5 mt-lg-0">
+    					<!-- <span class="subheading">FAQs</span> -->
+	            <h2 class="mb-3">Frequently Asks Questions</h2>
+
+    				</div>
+    				<div id="accordion" class="myaccordion w-100" aria-multiselectable="true">
+						  <div class="card">
+						    <div class="card-header p-0" id="headingOne">
+						      <h2 class="mb-0">
+						        <button href="#collapseOne" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="true" aria-controls="collapseOne">
+						        	<p class="mb-0">How much time ,it will take to complete my website ?</p>
+						          <i class="fa" aria-hidden="true"></i>
+						        </button>
+						      </h2>
+						    </div>
+						    <div class="collapse show" id="collapseOne" role="tabpanel" aria-labelledby="headingOne">
+						      <div class="card-body py-3 px-0">
+						      	<ol>
+						      		<li>We Here at WebEnv , work really hard and fast to finish projects before deadline.</li>
+						      		<li>You can always , ping us up on your id and we will suerly update you.</li>
+									<li>However , it will average between 6-7 days , At MAX.</li>
+
+
+						      	</ol>
+						      </div>
+						    </div>
+						  </div>
+
+						  <div class="card">
+						    <div class="card-header p-0" id="headingTwo" role="tab">
+						      <h2 class="mb-0">
+						        <button href="#collapseTwo" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseTwo">
+						        	<p class="mb-0">Is their any hidden charges except 6000rs?</p>
+						          <i class="fa" aria-hidden="true"></i>
+						        </button>
+						      </h2>
+						    </div>
+						    <div class="collapse" id="collapseTwo" role="tabpanel" aria-labelledby="headingTwo">
+						      <div class="card-body py-3 px-0">
+						      	<ol>
+						      		<li>No , Trust Us</li>
+									<li>You won't be charged more than 6000rs </li>
+									<li>And yes their is maintenance charges which is 400rs/month , but its completely optional. So no hidden charges. </li>
+
+						      	</ol>
+						      </div>
+						    </div>
+						  </div>
+
+						  <div class="card">
+						    <div class="card-header p-0" id="headingThree" role="tab">
+						      <h2 class="mb-0">
+						        <button href="#collapseThree" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseThree">
+						        	<p class="mb-0">How are to going to provide transparency ?</p>
+						          <i class="fa" aria-hidden="true"></i>
+						        </button>
+						      </h2>
+						    </div>
+						    <div class="collapse" id="collapseThree" role="tabpanel" aria-labelledby="headingTwo">
+						      <div class="card-body py-3 px-0">
+						      	<ol>
+						      		<li>You will get , All auth details.</li>
+						      		<li>You can always ask , their is no fact denying that.</li>
+						      		<li>You will get complete access , to C-Panel and other Stuff.</li>
+						      	</ol>
+						      </div>
+						    </div>
+						  </div>
+
+						  <div class="card">
+						    <div class="card-header p-0" id="headingFour" role="tab">
+						      <h2 class="mb-0">
+						        <button href="#collapseFour" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseFour">
+						        	<p class="mb-0">Any other Questions?!</p>
+						          <i class="fa" aria-hidden="true"></i>
+						        </button>
+						      </h2>
+						    </div>
+						    <div class="collapse" id="collapseFour" role="tabpanel" aria-labelledby="headingTwo">
+						      <div class="card-body py-3 px-0">
+						      	<p>Don't  worry , we got you covered just contact us via contact page , we will mail you your answer , As Soon as possible.</p>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+	        </div>
+        </div>
+    	</div>
+    </section>
+
+    <section class="ftco-section bg-light" id="price">
+    	<div class="container">
+    		<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 text-center heading-section ftco-animate">
+            <h2 class="mb-4">Our Best Pricing</h2>
+          </div>
+        </div>
+    		<div class="row d-flex">
+	        <div class="col-lg-3 col-md-6 ftco-animate">
+	          <div class="block-7">
+	            <div class="text-center">
+		            <h2 class="heading">Only Designing</h2>
+		            <span class="price"><sup>₹</sup> <span class="number">2999<small class="per"></small></span>
+		            <span class="excerpt d-block"></span>
+		            <h3 class="heading-2 mb-3">Enjoy All Designs</h3>
+		            
+		            <ul class="pricing-text mb-4">
+		              <li>Cool <strong>Animations</strong></li>
+		              <li><strong>Dynamic </strong>Features</li>
+		              <li><strong>800+ </strong>Ready Designs</li>
+		              <li><strong>Responsive </strong>Design</li><br><br><br><br><br>
+		            </ul>
+		            <a href="{%url 'pricing'%}" class="btn btn-tertiary d-block px-3 py-3 mb-4">More Details.</a>
+	            </div>
+	          </div>
+	        </div>
+	        <div class="col-lg-3 col-md-6 ftco-animate">
+	          <div class="block-7">
+	            <div class="text-center">
+		            <h2 class="heading">Only Backend</h2>
+		            <span class="price"><sup>₹</sup> <span class="number">3999<small class="per"></small></span></span>
+		            <span class="excerpt d-block"></span>
+		            <h3 class="heading-2 mb-3">Enjoy All The Features</h3>
+		            
+		            <ul class="pricing-text mb-4">
+		              <li><strong>Hosting</strong></li>
+		              <li><strong>Contact</strong> Form</li>
+		              <li>Basic <strong>Security</strong></li>
+						<li><strong>SSL</strong> Certificate</li><br><br><br><br><br>
+		            </ul>
+		            <a href="{%url 'pricing'%}" class="btn btn-tertiary d-block px-3 py-3 mb-4">More Details.</a>
+	            </div>
+	          </div>
+	        </div>
+	        <div class="col-lg-3 col-md-6 ftco-animate">
+	          <div class="block-7">
+	            <div class="text-center">
+		            <h2 class="heading">Expert Plan</h2>
+		            <span class="price"><sup>₹</sup> <span class="number">5999<small class="per"></small></span></span>
+		            <span class="excerpt d-block">All features are included of design and backend</span>
+					<h3 class="heading-2 mb-3">Including</h3>
+		            
+		            <ul class="pricing-text mb-4">
+		              <li>Free <strong>Domain</strong>(.co.in,.tech, </li>
+		              <li>.online,.xyz) for a year </li>
+		              <li>Extra feature like <strong>Google Translate</strong></li>
+						<li>And many more like <strong>Weekly Analytics</strong></li><br>
+		            </ul>
+		           <a href="{%url 'pricing'%}" class="btn btn-tertiary d-block px-3 py-3 mb-4">More Details.</a>
+	            </div>
+	          </div>
+	        </div>
+	        <div class="col-lg-3 col-md-6 ftco-animate">
+	          <div class="block-7">
+	            <div class="text-center">
+		            <h2 class="heading">Pro Plan</h2>
+		            <span class="price"><sup>₹</sup> <span class="number">7999<small class="per"></small></span></span>
+		            <span class="excerpt d-block">All features are included in Expert Plan</span>
+		            <h3 class="heading-2 mb-3">Including</h3>
+		            
+		            <ul class="pricing-text mb-4">
+		              <li>Live Web <strong>Scrapping</strong></li>
+		              <li><strong>Covid Cases</strong> Counter</li>
+		              <li><strong>Free Domain(.in) for a year</strong> Overages</li>
+						<li>Even Extra Features like <strong>Prompt while closing</strong></li><br>
+		            </ul>
+			          <a href="{%url 'pricing'%}" class="btn btn-tertiary d-block px-3 py-3 mb-4">More Details.</a>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+    	</div>
+    </section>
+
+
+
+
+
+
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">WebEnv</h2>
+              <p>A Initiative By Micro-Square.inc Developed by two young minds Aiming to revolutionize digital space. Creativity , Security , Productivity on peak.</p>
+              <ul class="ftco-footer-social list-unstyled mb-0">
+                <li class="ftco-animate"><a href="https://micro-square.co.in"><span class="fa fa-linkedin"></span></a></li>
+	              <li class="ftco-animate"><a href="https://www.facebook.com/webenv1/"><span class="fa fa-facebook"></span></a></li>
+	              <li class="ftco-animate"><a href="https://www.instagram.com/web.env/"><span class="fa fa-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-5">
+              <h2 class="ftco-heading-2">Useful Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="{% url 'about' %}" class="py-2 d-block">About WebEnv</a></li>
+                <li><a href="{% url 'pricing' %}" class="py-2 d-block">Pricing</a></li>
+                <li><a href="{% url 'contact' %}" class="py-2 d-block">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Navigational</h2>
+              <ul class="list-unstyled">
+                <li><a href="{% url 'contact' %}" class="py-2 d-block">Join Us</a></li>
+                <li><a href="{% url 'privacypolicy' %}" class="py-2 d-block">Privacy &amp; Policy</a></li>
+                <li><a href="{% url 'termsandconditions' %}" class="py-2 d-block">Terms &amp; Condition</a></li>
+				  <li><a href="{% url 'sitemap' %}" class="py-2 d-block">Sitemap</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Office</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="mr-3 fa fa-map-marker"></span><span class="text">Gujrat,INDIA</span></li>
+	                <li><a href="tel:+91-9773189644"><span class="mr-3 fa fa-phone"></span><span class="text">+91 97731 89644</span></a></li>
+	                <li><a href="mailto: webenvglobal"><span class="mr-3 fa fa-envelope"></span><span class="text">webenvglobal@gmail.com</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <p>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Webenv is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://micro-square.co.in" target="_blank">MicroSquare</a>
+</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="{% static "js/jquery.min.js"%}"></script>
+  <script src="{% static "js/jquery-migrate-3.0.1.min.js"%}"></script>
+  <script src="{% static "js/popper.min.js"%}"></script>
+  <script src="{% static "js/bootstrap.min.js"%}"></script>
+  <script src="{% static "js/jquery.easing.1.3.js"%}"></script>
+  <script src="{% static "js/jquery.waypoints.min.js"%}"></script>
+  <script src="{% static "js/jquery.stellar.min.js"%}"></script>
+  <script src="{% static "js/owl.carousel.min.js"%}"></script>
+  <script src="{% static "js/jquery.magnific-popup.min.js"%}"></script>
+  <script src="{% static "js/jquery.animateNumber.min.js"%}"></script>
+  <script src="{% static "js/scrollax.min.js"%}"></script>
+  <script src="{% static "js/main.js"%}"></script>
+    
+  </body>
+</html>

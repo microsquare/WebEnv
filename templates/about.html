@@ -1,0 +1,302 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-171263565-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-171263565-1');
+</script>
+
+    <title>About-Webenv</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="{% static "images/mainfav.ico"%}" type="image/x-icon" />
+    
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="{% static "css/animate.css"%}">
+    
+    <link rel="stylesheet" href="{% static "css/owl.carousel.min.css"%}">
+    <link rel="stylesheet" href="{% static "css/owl.theme.default.min.css"%}">
+    <link rel="stylesheet" href="{% static "css/magnific-popup.css"%}">
+    
+    <link rel="stylesheet" href="{% static "css/flaticon.css"%}">
+    <link rel="stylesheet" href="{% static "css/style.css"%}">
+  </head>
+  <body>
+    
+	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="{%url 'home'%}"><img src="{% static "images/logo.png"%}"></a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	          <li class="nav-item"><a href="{% url 'home' %}" class="nav-link">Home</a></li>
+	          <li class="nav-item active"><a href="{% url 'about' %}" class="nav-link">About</a></li>
+	          <li class="nav-item"><a href="{% url 'pricing' %}" class="nav-link">Pricing</a></li>
+	          <li class="nav-item"><a href="{% url 'feature' %}" class="nav-link">Features</a></li>
+	          <li class="nav-item"><a href="{% url 'contact' %}" class="nav-link">Contact</a></li>
+	          <li class="nav-item cta"><a href="{% url 'contact' %}" class="nav-link"><span>Talk With Us!!</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav -->
+
+    <div class="hero-wrap hero-wrap-2" style="background-image: url({% static "images/bg_1.jpg"%});" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-end justify-content-start">
+          <div class="col-md-8 ftco-animate text-center text-md-left mb-5">
+          	<p class="breadcrumbs mb-0"><span class="mr-3"><a href="{%url 'home'%}">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>About</span></p>
+            <h1 class="mb-3 bread">About</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="ftco-section ftco-faqs">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-lg-6">
+	    				<div class="img img-faqs mb-4 mb-sm-0" style="background-image:url({% static "images/about-2.jpg"%});">
+	    				</div>
+    			</div>
+    			<div class="col-lg-6 pl-lg-5">
+    				<div class="heading-section mb-5 mt-5 mt-lg-0">
+	            <h2 class="mb-3">About WebEnv</h2>
+	            <p>WebEnv stands for Webspace Environment . Our goal is to digitally modifiy our environment  to create a awesome webspace for everyone.</p>
+	            <p>WebEnv provides all types of website design , i.e We can make stunning Portfolios , Awesome Info page , Business Page , etc . For any Individual/Group .</p>
+	            <p>A Initiative By Micro-Square.inc Developed by two young minds Aiming to revolutionize digital space. Micro-Square aims to connect people to this vast collection of data and utilize it productive way , we here a subsidary of MIcro-Square aims to connect user to this never ending collection of website known as internet .</p>
+    				</div>
+	        </div>
+        </div>
+    	</div>
+    </section>
+
+    <section class="ftco-section ftco-partner">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-sm ftco-animate">
+    				<a href="https://www.python.org/" class="partner"><img src="{% static "images/partner-1.png"%}" class="img-fluid" alt="Colorlib Template"></a>
+    			</div>
+    			<div class="col-sm ftco-animate">
+    				<a href="https://html5.org/" class="partner"><img src="{% static "images/partner-2.png"%}" class="img-fluid" alt="Colorlib Template"></a>
+    			</div>
+    			<div class="col-sm ftco-animate">
+    				<a href="https://www.w3.org/Style/CSS/Overview.en.html" class="partner"><img src="{% static "images/partner-3.png"%}" class="img-fluid" alt="Colorlib Template"></a>
+    			</div>
+    			<div class="col-sm ftco-animate">
+    				<a href="https://www.javascript.com/" class="partner"><img src="{% static "images/partner-4.png"%}" class="img-fluid" alt="Colorlib Template"></a>
+    			</div>
+    			<div class="col-sm ftco-animate">
+    				<a href="https://www.djangoproject.com/" class="partner"><img src="{% static "images/partner-5.png"%}" class="img-fluid" alt="Colorlib Template"></a>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+  
+
+    <section class="ftco-section ftco-counter img" id="section-counter">
+    	<div class="container pb-md-5">
+    		<div class="row justify-content-center mb-5">
+          <div class="col-md-8 text-center heading-section heading-section-white ftco-animate">
+          	<h2 class="mb-3">We Always Try To Understand Users Expectation</h2>
+          </div>
+        </div>
+    		<div class="row justify-content-center">
+    			<div class="col-md-10">
+		    		<div class="row">
+		          <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
+		            <div class="block-18 text-center">
+		              <div class="text">
+		                <strong class="number" data-number="4">0</strong>
+		                <span>Websites Completed</span>
+		              </div>
+		            </div>
+		          </div>
+		          <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
+		            <div class="block-18 text-center">
+		              <div class="text">
+		                <strong class="number" data-number="2">0</strong>
+		                <span>Ongoing Projects</span>
+		              </div>
+		            </div>
+		          </div>
+		          <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
+		            <div class="block-18 text-center">
+		              <div class="text">
+		                <strong class="number" data-number="876">0</strong>
+		                <span>Time spent(hours)</span>
+		              </div>
+		            </div>
+		          </div>
+                  <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
+		            <div class="block-18 text-center">
+		              <div class="text">
+		                <strong class="number" data-number="36764">0</strong>
+		                <span>Lines Of code</span>
+		              </div>
+		            </div>
+		          </div>
+		        </div>
+	        </div>
+        </div>
+    	</div>
+    </section>
+
+    <section class="ftco-section ftco-no-pt ftco-no-pb bg-light">
+    	<div class="container">
+    		<div class="row justify-content-center">
+    			<div class="col-lg-10">
+    				<div class="intro">
+    					<div class="row">
+    						<div class="col-md-8">
+    							<h3>Have any question about us?</h3>
+    							<p>Just Contact us , we will be pleased to reply , regards. Webenv Team.</p>
+    						</div>
+    						<div class="col-md-4 d-flex align-items-center justify-content-center">
+    							<a href="{% url 'contact' %}" class="btn btn-tertiary px-4 py-3">Get in Touch</a>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+    <section class="ftco-section testimony-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 text-center heading-section ftco-animate">
+            <h2 class="mb-4">Words From Developers!</h2>
+          </div>
+        </div>
+        <div class="row ftco-animate justify-content-center">
+          <div class="col-md-10">
+            <div class="carousel-testimony owl-carousel ftco-owl">
+              <div class="item">
+                <div class="testimony-wrap d-flex">
+                  <div class="user-img mb-4" style="background-image: url({% static "images/person_1.jpg"%})">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="mb-4">I believe in making cool looking websites , which get struck in your mind . LIKE THIS ONE! .</p>
+                      <p class="name"><a href="https://www.mehulgosavi.tech">Mehul Gosavi</a></p>
+                      <span class="position">Lead Frontend Developer/ Advertising Manager/ Co-founder(<a href="https://micro-square.co.in">micro-square</a>) </span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap d-flex">
+                  <div class="user-img mb-4" style="background-image: url({% static "images/person_2.png"%})">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="mb-4">Well i believe in seamless connection with world wide web , thus making website smooth and stable ! Fairly Behind The Scenes .</p>
+                      <p class="name"><a href="https://www.meetchaudhari.tech">Meet Chaudhari</a></p>
+                      <span class="position">Lead Backend Developer / Designer/ Co-founder(<a href="https://micro-square.co.in">micro-square)</a></span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <footer class="ftco-footer ftco-bg-dark ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">WebEnv</h2>
+              <p>A Initiative By Micro-Square.inc Developed by two young minds Aiming to revolutionize digital space. Creativity , Security , Productivity on peak.</p>
+              <ul class="ftco-footer-social list-unstyled mb-0">
+                <li class="ftco-animate"><a href="https://micro-square.co.in"><span class="fa fa-linkedin"></span></a></li>
+	               <li class="ftco-animate"><a href="https://www.facebook.com/webenv1/"><span class="fa fa-facebook"></span></a></li>
+	              <li class="ftco-animate"><a href="https://www.instagram.com/web.env/"><span class="fa fa-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-5">
+              <h2 class="ftco-heading-2">Useful Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="{% url 'about' %}" class="py-2 d-block">About WebEnv</a></li>
+                <li><a href="{% url 'pricing' %}" class="py-2 d-block">Pricing</a></li>
+                <li><a href="{% url 'contact' %}" class="py-2 d-block">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Navigational</h2>
+              <ul class="list-unstyled">
+                <li><a href="{% url 'contact' %}" class="py-2 d-block">Join Us</a></li>
+                <li><a href="{% url 'privacypolicy' %}" class="py-2 d-block">Privacy &amp; Policy</a></li>
+                <li><a href="{% url 'termsandconditions' %}" class="py-2 d-block">Terms &amp; Condition</a></li>
+                   <li><a href="{% url 'sitemap' %}" class="py-2 d-block">Sitemap</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Office</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="mr-3 fa fa-map-marker"></span><span class="text">Gujrat,INDIA</span></li>
+	                <li><a href="tel:+91-9773189644"><span class="mr-3 fa fa-phone"></span><span class="text">+91 97731 89644</span></a></li>
+	                <li><a href="mailto: webenvglobal"><span class="mr-3 fa fa-envelope"></span><span class="text">webenvglobal@gmail.com</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <p>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Webenv is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://micro-square.co.in" target="_blank">MicroSquare</a>
+</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="{% static "js/jquery.min.js"%}"></script>
+  <script src="{% static "js/jquery-migrate-3.0.1.min.js"%}"></script>
+  <script src="{% static "js/popper.min.js"%}"></script>
+  <script src="{% static "js/bootstrap.min.js"%}"></script>
+  <script src="{% static "js/jquery.easing.1.3.js"%}"></script>
+  <script src="{% static "js/jquery.waypoints.min.js"%}"></script>
+  <script src="{% static "js/jquery.stellar.min.js"%}"></script>
+  <script src="{% static "js/owl.carousel.min.js"%}"></script>
+  <script src="{% static "js/jquery.magnific-popup.min.js"%}"></script>
+  <script src="{% static "js/jquery.animateNumber.min.js"%}"></script>
+  <script src="{% static "js/scrollax.min.js"%}"></script>
+
+  <script src="{% static "js/main.js"%}"></script>
+    
+  </body>
+</html>
