@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'main',
-    'jet_django',
+
 ]
 
 MIDDLEWARE = [
@@ -131,5 +131,3 @@ STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
-JET_PROJECT = 'webenv_2'
-JET_TOKEN = '285a0880-57d6-494a-abd5-2a38cca5d987'
