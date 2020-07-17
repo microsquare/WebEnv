@@ -27,6 +27,8 @@ SECRET_KEY = '%989&$hfp222l8pc91iy2(owt&=)=g43crfou4kkp5m7&tzu!-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+COMPRESS_ENABLED= True
+COMPRESS_OFFLINE= True
 ALLOWED_HOSTS = ['webenv.herokuapp.com', '127.0.0.1', 'www.webenv.in', 'webenv.in']
 
 # Application definition
@@ -39,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'main',
+    'compressor',
 
 ]
 
@@ -124,7 +127,12 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
-
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    # other finders..
+    'compressor.finders.CompressorFinder',
+)
 
 PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
