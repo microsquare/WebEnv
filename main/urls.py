@@ -15,5 +15,7 @@ urlpatterns = [
          TemplateView.as_view(template_name="sitemap.xml", content_type="text/xml"),name='sitemap'),
 path('sitemap.xml',
          TemplateView.as_view(template_name="sitemap.xml", content_type="text/xml"),name='sitemap.xml'),
+    path('loaderio-0fdf909cc153a47b8a417c890af56acb.txt',
+         TemplateView.as_view(template_name="loaderio-0fdf909cc153a47b8a417c890af56acb.txt", content_type="text/xml"),name='loaderio-0fdf909cc153a47b8a417c890af56acb.txt'),
 
 ]
